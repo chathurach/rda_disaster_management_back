@@ -1,0 +1,21 @@
+name: rda_disaster_management
+description: A new Dart Frog application
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  cron: ^0.6.2
+  dart_frog: ^1.1.0
+  dio: ^5.9.0
+  hive_ce: ^2.15.1
+  latlong2: ^0.9.1
+  path: ^1.9.1
+  xml: ^6.6.1
+
+dev_dependencies:
+  dart_frog_lint: ^0.1.0
+  mocktail: ^1.0.3
+  test: ^1.25.5
