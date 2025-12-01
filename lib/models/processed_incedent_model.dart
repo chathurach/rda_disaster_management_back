@@ -11,6 +11,8 @@ class ProcessedIncidentData {
     required this.latLongTo,
     required this.reason,
     required this.currentStatus,
+    required this.eeDivision,
+    required this.roadSection,
   });
   final int serialNo;
   final String routeNo;
@@ -21,6 +23,8 @@ class ProcessedIncidentData {
   final String latLongTo;
   final String reason;
   final String currentStatus;
+  final String eeDivision;
+  final List<Map<String, String>> roadSection;
 
   /// Converts the object to the Map format expected by the API consumer.
   Map<String, dynamic> toJson() {
@@ -34,6 +38,8 @@ class ProcessedIncidentData {
       'LatLong To': latLongTo,
       'Reason for impassability': reason,
       'Current Status': currentStatus,
+      'EE Division': eeDivision,
+      'Road Section': roadSection,
     };
   }
 }
